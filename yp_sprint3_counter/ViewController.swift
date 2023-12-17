@@ -29,12 +29,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         logsView.isEditable = false
         logsView.text = "История изменений:\n\n"
+        
         super.viewDidLoad()
     }
     @IBAction func plusAction(_ sender: Any) {
         counter += 1
         var logsString = localDate
-        logsString.append(":\nзначение изменено на +1\n")
+        logsString.append(":\nзначение изменено на +1\n\n")
     
         mainLable.text = counter.description
         
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
     @IBAction func minusAction(_ sender: Any) {
         if counter == 0{
             var logsString = localDate
-            logsString.append(":\nпопытка уменьшить значение счётчика ниже 0\n")
+            logsString.append(":\nпопытка уменьшить значение счётчика ниже 0\n\n")
             logsView.text.append(logsString)
             resizeLableScrollText()
             return
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
         
         counter -= 1
         var logsString = localDate
-        logsString.append(":\nзначение изменено на -1\n")
+        logsString.append(":\nзначение изменено на -1\n\n")
         mainLable.text = counter.description
         
         logsView.text.append(logsString)
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
     @IBAction func resetAction(_ sender: Any) {
         counter = 0
         var logsString = localDate
-        logsString.append(":\nзначение сброшено\n")
+        logsString.append(":\nзначение сброшено\n\n")
         mainLable.text = counter.description
         
         logsView.text.append(logsString)
