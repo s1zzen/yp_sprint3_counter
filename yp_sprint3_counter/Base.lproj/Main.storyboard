@@ -66,7 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="logsView" destination="iXv-wl-Yre" id="ms5-k2-elj"/>
-                        <outlet property="mainLable" destination="oLl-hg-bNc" id="9wC-Mn-kfl"/>
+                        <outlet property="mainLabel" destination="oLl-hg-bNc" id="9wC-Mn-kfl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
